@@ -22,6 +22,7 @@ code {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
+  background-color:rgb(55, 53, 53)
 }
 
 #dummy_video_canvas {
