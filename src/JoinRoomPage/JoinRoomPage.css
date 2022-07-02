@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color:rgb(56, 54, 54)
 }
 
 .join_room_title {
@@ -23,6 +24,7 @@
   font-weight: 700;
   margin-left: 35px;
   margin-top: 80px;
+  color: rgba(45,140,255,255);
 }
 
 .join_room_inputs_container {
@@ -98,6 +100,7 @@
   font-weight: 400;
   font-size: 16px;
   margin-left: 15px;
+  color: white;
 }
 
 .checkbox_image {
@@ -157,8 +160,9 @@
   width: 300px;
   height: 40px;
   padding: 0px 15px;
+  outline: none
 }
 
 .join_room_input:focus {
-  border: 1px solid blue;
+  border: 2px solid rgba(45,140,255,255);
 }

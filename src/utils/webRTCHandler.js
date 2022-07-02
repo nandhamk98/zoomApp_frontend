@@ -32,7 +32,7 @@ export const getLocalPreviewAndInitRoomConnection = async (
   navigator.mediaDevices
     .getUserMedia(constraints)
     .then((stream) => {
-      console.log("successfuly received local stream");
+      // console.log("successfuly received local stream");
       localStream = stream;
       showLocalVideoPreview(localStream);
 
@@ -159,7 +159,7 @@ const showLocalVideoPreview = (stream) => {
   videoContainer.appendChild(videoElement);
 
   if (store.getState().connectOnlyWithAudio) {
-    videoContainer.appendChild(getAudioOnlyLabel());
+    videoContainer.appendChild(getAudioOnlyLabel(store.getState().identity));
   }
 
   videosContainer.appendChild(videoContainer);
