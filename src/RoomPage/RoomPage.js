@@ -28,7 +28,11 @@ const RoomPage = ({
         connectOnlyWithAudio
       );
     }
-  }, []);
+  }, [roomId,
+    identity,
+    isRoomHost,
+    showOverlay,
+    connectOnlyWithAudio]);
 
   return (
     <div className="room_container">
