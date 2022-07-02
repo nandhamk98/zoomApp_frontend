@@ -149,7 +149,7 @@ const showLocalVideoPreview = (stream) => {
   videoContainer.classList.add("video_track_container");
   const videoElement = document.createElement("video");
   videoElement.autoplay = true;
-  videoElement.muted = true;
+  videoElement.muted = false;
   videoElement.srcObject = stream;
 
   videoElement.onloadedmetadata = () => {
