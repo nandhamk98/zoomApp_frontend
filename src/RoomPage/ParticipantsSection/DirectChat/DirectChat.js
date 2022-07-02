@@ -27,7 +27,7 @@ const DirectChat = ({ activeConversation, directChatHistory }) => {
         activeConversation ? activeConversation.socketId : null
       )
     );
-  }, [activeConversation, directChatHistory]);
+  }, []);
 
   return (
     <div className="direct_chat_container">

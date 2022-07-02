@@ -11,7 +11,7 @@ const LocalScreenSharingPreview = ({ stream }) => {
     video.onloadedmetadata = () => {
       video.play();
     };
-  }, [stream]);
+  }, []);
 
   return (
     <div className="local_screen_share_preview">

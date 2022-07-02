@@ -23,7 +23,7 @@ const MessagesContainer = ({ messages }) => {
     if (scrollRef) {
       scrollRef.current.scrollIntoView({ behavior: "smooth" });
     }
-  }, [messages]);
+  }, []);
 
   return (
     <div className="direct_messages_container">

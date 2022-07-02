@@ -16,6 +16,7 @@ const RoomPage = ({
   showOverlay,
   connectOnlyWithAudio,
 }) => {
+  
   useEffect(() => {
     if (!isRoomHost && !roomId) {
       const siteUrl = window.location.origin;
@@ -28,11 +29,7 @@ const RoomPage = ({
         connectOnlyWithAudio
       );
     }
-  }, [roomId,
-    identity,
-    isRoomHost,
-    showOverlay,
-    connectOnlyWithAudio]);
+  },[]);
 
   return (
     <div className="room_container">
